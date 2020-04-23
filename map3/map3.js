@@ -8,9 +8,10 @@ jQuery.getJSON(statesUrl, function (data) {
     var stateColor = 'violet'
     if (pop < 4631918.5) { stateColor = 'darkmagenta' }
     return {
-      color: stateColor,
-      weight: 1.5,
+      color: 'lightyellow',
+      weight: 2.5,
       fillOpacity: 0.2,
+      fillColor: stateColor
     }
   }
   var GeojsonOptionsObject = {
