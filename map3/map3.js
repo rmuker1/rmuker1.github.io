@@ -16,7 +16,6 @@ jQuery.getJSON(statesUrl, function (data) {
   var GeojsonOptionsObject = {
   style: stateStyle,
    onEachFeature: createPopup
-  }
 }
   L.geoJSON(data, GeojsonOptions).addTo(map3)
 })
