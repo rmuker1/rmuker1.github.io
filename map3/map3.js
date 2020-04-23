@@ -17,11 +17,11 @@ jQuery.getJSON(statesUrl, function (data) {
   style: stateStyle,
    onEachFeature: createPopup
 }
-  L.geoJSON(data, GeojsonOptions).addTo(map3)
+  L.geoJSON(data, GeojsonOptionsObject).addTo(map3)
 })
 
  var createPopup = function (feature, layer) {
    var name = feature.properties.STATE_NAME
-   var age = feature.properties.POPULATION
+   var pop = feature.properties.POPULATION
    layer.bindPopup('Population of ' + name + ': ' + pop + '<br>National average: 4631918.5')
  }
